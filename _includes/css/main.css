@@ -532,3 +532,68 @@ footer .footer-below {
     background-color: #777;
 }
 
+/*skill css*/
+.title { 
+  font-size: 50px; 
+  font-weight: bold; 
+  text-align: center; 
+  letter-spacing: 3px; 
+  padding-bottom: 70px; 
+} 
+.title-skill { 
+  margin-top: 30px; 
+} 
+.title::after { 
+  content: ""; 
+  display: block; 
+  width: 100px; 
+  height: 10px; 
+  margin: 0 auto; 
+  background: -webkit-linear-gradient(#4169e1, #5592cf); 
+} 
+.skills-area * { 
+  height: auto; 
+  background-color: #fff; 
+  color: #222222; 
+} 
+.skills-area > .container { 
+  text-align: center; 
+} 
+.skills-area > .container > .item { 
+  height: auto; 
+  background-color: #fff; 
+  padding: 20px; 
+  margin: 20px; 
+  text-align: left; 
+  transition: all 0.5s ease; 
+  box-shadow: rgba(188, 196, 219, 0.77) 5px 5px 13px 0px; 
+} 
+.skills-area > .container > .item:hover { 
+  transform: scale(1.015); 
+  box-shadow: 0 6ps 20px 0 rgba(0, 0, 0, 0.2); 
+} 
+.skills-area > .container > .item > .icon { 
+  padding: 10px 0; 
+  display: inline-block; 
+} 
+.skills-area > .container > .item > .icon > span > i { 
+  font-size: 48px; 
+  color: #aaa; 
+} 
+.skills-area > .container > .item > .skill { 
+  font-size: 32px; 
+  font-weight: bold; 
+  padding: 10px 0; 
+} 
+.skills-area > .container > .item > .content { 
+  font-size: 16px; 
+  font-family: "Noto Sans KR", sans-serif; 
+  letter-spacing: 1.5px; 
+  padding: 10px 0; 
+} 
+.icon-image { 
+  width: 80px; 
+} 
+
+
+
