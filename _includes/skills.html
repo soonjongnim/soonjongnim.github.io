@@ -4,7 +4,7 @@
 		{% for inform in site.skill %}                   
 		<div class="progress" data-toggle="tooltip" data-placement="top" title="{{ inform.content }}">   
 		    <div class="progress-bar progress-bar-{{ inform.color }}" role="progressbar" aria-valuenow="{{ inform.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ inform.percent }}%;" > 
-			<span class="sr-only">60% Complete</span> 
+			<span class="sr-only">{{ inform.percent }}% Complete</span> 
 		    </div>  
 		    <span class="progress-type">{{ inform.title }}</span> 
 		    <span class="progress-completed">{{ inform.percent }}%</span> 
