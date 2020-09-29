@@ -6,14 +6,14 @@
 				<hr class="star-primary">
 			</div>
 		</div>
-		<div class="row wow fadeInUp">  
+		<div class="row">  
 			{% for inform in site.skill %}                   
 			<div class="progress" data-toggle="tooltip" data-placement="top" title="{{ inform.content }}">   
-			    <div class="progress-bar progress-bar-{{ inform.color }}" role="progressbar" aria-valuenow="{{ inform.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ inform.percent }}%;" > 
+			    <div class="progress-bar progress-bar-{{ inform.color }}  wow fadeInLeft" role="progressbar" aria-valuenow="{{ inform.percent }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ inform.percent }}%;" > 
 				<span class="sr-only">{{ inform.percent }}% Complete</span> 
 			    </div>  
-			    <span class="progress-type">{{ inform.title }}</span> 
-			    <span class="progress-completed">{{ inform.percent }}%</span> 
+			    <span class="progress-type wow fadeInLeft">{{ inform.title }}</span> 
+			    <span class="progress-completed wow fadeInRight">{{ inform.percent }}%</span> 
 			</div> 
 			{% endfor %} 
 		</div> 
