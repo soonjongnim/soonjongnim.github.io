@@ -71,33 +71,43 @@ skill:
   - img : java.png 
     title : JAVA 
     content : 자바 
-    percent : 60 
+    percent : 80 
     color : success 
   - img : js.png 
     title : JavaScript 
     content : 자바스크립트 
-    percent : 10 
+    percent : 90 
     color : info 
   - img : jquery.png 
     title : Jquery 
     content : 제이쿼리 
-    percent : 30 
+    percent : 80
     color : warning 
-  - img : database.png 
-    title : ORACLE & Maria DB 
-    content : 오라클 & 마리아디비 
-    percent : 40 
+  - img : js.png 
+    title : Vue.js 
+    content : Vue.js 
+    percent : 70 
     color : danger 
+  - img : database.png 
+    title : DataBase
+    content : 오라클 & PostgreSQL & MySQL & MariaDB 
+    percent : 80 
+    color :  
   - img : spring.png 
     title : SPRING & SPRING BOOT 
     content : 스프링 & 스프링부트 
-    percent : 70 
-    color :  
+    percent : 80 
+    color :  success
+  - img : spring.png 
+    title : eGovFramework
+    content : eGovFramework 
+    percent : 80 
+    color :  info
   - img : git.png 
     title : GIT & GIT HUB 
     content : 깃 & 깃허브 
-    percent : 80 
-    color : success 
+    percent : 60 
+    color : warning 
 
 #for posts
 defaults:
