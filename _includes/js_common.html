@@ -3,7 +3,8 @@
     (function () {
         //hide #back-top first
         $("#back-top").hide();
-
+        $('[data-toggle="tooltip"]').tooltip(); 
+        
         // fade in #back-top
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
