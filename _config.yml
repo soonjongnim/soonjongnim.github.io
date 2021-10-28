@@ -1,7 +1,7 @@
 # Site settings
 title: Soonjong's
 email: soonjongnim@naver.com
-url: https://doozzuri.github.io/
+url: https://soonjongnim.github.io/
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 keywords: "your keywords, separated by commas"
 skills: "Web Developer"
@@ -50,7 +50,7 @@ social:
   - title: instagram
     url: https://www.instagram.com/kimsooyeon9112
   - title: github
-    url: http://github.com/doozzuri
+    url: http://github.com/soonjongnim
   - title: blogger
     url: https://doozzuri.tistory.com/
 
