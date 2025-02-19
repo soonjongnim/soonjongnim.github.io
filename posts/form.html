@@ -1,0 +1,57 @@
+
+<script>
+    function test(event) {
+        event.preventDefault(); //submit 할때 새로고침 되는것을 방지
+        let fileObject = document.getElementById("input_file");
+        let fileName = ["file:///D:/gitweb/portfolio/posts/header.html"];
+        // let fileName = fileObject.files[0];
+        console.log("fileName:", fileName)
+
+        let fr = new FileReader();
+        fr.readAsDataURL(fileName);
+        // fr.readAsText(fileName, "utf-8");
+
+        fr.onload = () => {
+            parseText(fr.result);
+        }
+    }
+
+    function parseText(text) {
+        console.log(text)
+        // 여기서 파일 가공하면됨
+    }
+
+    // test(event);
+</script>
+
+<form>
+    <div>
+        <label for="input_file">파일을 추가해주세요.</label>
+        <input type="file" id="input_file">
+    </div>
+    <div>
+        <button onclick="test(event)">summit</button>
+    </div>
+</form>
+
+<!-- <input type='file' name='upload_image[]' id="upload_img">  -->
+
+<script> 
+    function readTextFile(file) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.open("GET", file, false);
+        rawFile.onreadystatechange = function () {
+            if(rawFile.readyState === 4)
+            {
+                if(rawFile.status === 200 || rawFile.status == 0)
+                {
+                    var allText = rawFile.responseText;
+                    console.log(allText);
+                }
+            }
+        };
+        rawFile.send();
+    }
+
+    // readTextFile("https://soonjongnim.github.io/portfolio/posts/block_chain/post.html");
+</script>

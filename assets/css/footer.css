@@ -1,0 +1,156 @@
+.soon9086-footer-box {
+    align-content: center;
+    align-items: center;
+    background-color: #e2fdff;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%
+}
+
+.soon9086-1152xwz {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1000px;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+
+.soon9086-6gockf-container {
+    flex: none;
+    height: 64px;
+    position: relative;
+    width: 64px;
+    z-index: 1
+}
+
+.soon9086-lhbujr {
+    flex: none;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.soon9086-pffdby {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    height: min-content;
+    justify-content: flex-start;
+    overflow: visible;
+    padding: 10px;
+    position: relative;
+    width: min-content
+}
+
+.soon9086-pffdby a {
+    height: 32px;
+    width: 32px;
+}
+
+.soon9086-pffdby a img {
+    width: 100%;
+    height: 100%;
+}
+
+.soon9086-1azl2mu,
+.soon9086-pwmqve,
+.soon9086-s0fcyt,
+.soon9086-10jxj8b {
+    flex: none;
+    height: 32px;
+    position: relative;
+    width: 32px
+}
+
+.soon9086-ew9945 {
+    --soon9086-link-hover-text-color: rgba(153, 153, 153, .6);
+    --soon9086-link-text-decoration: none;
+    --soon9086-paragraph-spacing: 0px;
+    flex: none;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    white-space: pre-wrap;
+    width: 100%;
+    word-break: break-word;
+    word-wrap: break-word
+}
+
+@supports (background: -webkit-named-image(i)) and (not (scale:1)) {
+
+    .soon9086-14izaqh,
+    .soon9086-1152xwz,
+    .soon9086-pffdby {
+        gap: 0px
+    }
+
+    .soon9086-14izaqh>:first-child,
+    .soon9086-1152xwz>:first-child {
+        margin-top: 0
+    }
+    
+    .soon9086-14izaqh>:last-child,
+    .soon9086-1152xwz>:last-child {
+        margin-bottom: 0
+    }
+
+    .soon9086-pffdby>* {
+        margin: 0 10px
+    }
+
+    .soon9086-pffdby>:first-child {
+        margin-left: 0
+    }
+
+    .soon9086-pffdby>:last-child {
+        margin-right: 0
+    }
+
+    .soon9086-14izaqh>* {
+        margin: 5px 0
+    }
+
+    .soon9086-1152xwz>* {
+        margin: 0
+    }
+}
+
+@media (min-width: 810px) and (max-width: 1199px) {
+
+    .soon9086-14izaqh {
+        padding: 50px;
+        /* padding-bottom: 0px; */
+    }
+ 
+}
+
+@media (max-width: 809px) {
+
+    .soon9086-14izaqh {
+        padding: 40px 20px
+    }
+ 
+}
+

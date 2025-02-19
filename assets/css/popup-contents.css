@@ -1,0 +1,260 @@
+/*
+* Template Name: BreezyCV - Resume / CV / vCard / Portfolio Template
+* Author: LMPixels
+* Author URL: http://themeforest.net/user/lmpixels
+* Version: 1.3.0
+*/
+
+/* ------------------------------------------------------------
+1. Fonts
+2. General Styles
+3. Page loadig animation
+4. Header
+5. Page Content
+6. Elements
+7. Single Page (Blog Posts, 404 etc.)
+8. Media Queries
+9. Pricing
+10. Updates
+------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+1. Fonts
+------------------------------------------------------------ */
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
+
+/* Linear Icons Font */
+@import url('./fonts/linear-icons-font/style.css');
+
+/* FontAwesome Free Icons Font */
+@import url('./fonts/fontawesome-free-5.12.1-web/css/all.min.css');
+
+/* ============================================================================= 
+3. Page loadig animation
+============================================================================= */
+.no-js .preloader,
+.no-js .preloader-portfolio {
+  display: none;
+}
+.preloader,
+.preloader-portfolio {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+}
+
+.preloader-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  background-color: inherit;
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.preloader-spinner {
+  width: 52px;
+  height: 52px;
+  margin: 100px auto;
+  background-color: #fca072;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+/* ------------------------------------------------------------
+5. Page Content
+------------------------------------------------------------ */
+.content-area {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  max-width: calc(100% - 380px);
+}
+
+.single-page-content {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: auto;
+}
+
+.single-page-content img {
+  max-width: 100%;
+  display: block;
+}
+
+.single-page-content p {
+  margin-bottom: 10px;
+}
+
+.single-page-content .post-content {
+  position: relative;
+  margin-top: -70px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.post {
+  background: #e2e5ea;
+}
+
+.entry-header {
+  position: relative;
+  z-index: 1;
+  padding: 5px 0 0;
+}
+
+.entry-title {
+  font-size: 32px;
+  line-height: 1.3;
+  margin: 15px 0 15px 0;
+  margin-top: 30px;
+}
+
+.post-image {
+  margin: 30px 0;
+}
+
+blockquote {
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-size: 1em;
+  border-left: 2px solid #d8d8d8;
+  font-style: italic;
+}
+
+.entry-meta.entry-meta-bottom {
+  display: flex;
+  width: 100%;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  margin: 30px 0 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-meta.entry-meta-bottom .date-author {
+  display: inline-block;
+  line-height: 28px;
+  margin: 5px 0;
+}
+
+.entry-meta {
+  color: #9e9e9e;
+}
+
+.entry-meta.entry-meta-bottom .date-author {
+  display: inline-block;
+  line-height: 28px;
+  margin: 5px 0;
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin: 0 3px 0 0;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  color: #888;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  border-radius: 0;
+}
+
+.share-buttons a:last-child {
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.post-tags {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags span:first-child {
+  margin-left: 0;
+}
+
+.tags span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #666;
+  padding: 2px 7px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+  margin: 3px 2px 2px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .content-area {
+      max-width: calc(100% - 330px);
+  }
+  
+  .page {
+      padding-left: 30px;
+  }
+}
+
+.post-thumbnail {
+  /* background: #b2b2b2; */
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 130px;
+  z-index: 0;
+}
+
+
+

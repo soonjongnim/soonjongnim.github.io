@@ -1,0 +1,98 @@
+<!-- Load CSS -->
+<link rel="stylesheet" href="assets/css/header.css" type="text/css">
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">Top</button>
+
+<!-- header.html -->
+<div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0;background-size:14.49px auto;background-image:url(https://framerusercontent.com/images/27lPwr6m0qWCWuTd76MieCfLWY.svg);border:0;background-repeat:repeat;background-position:left top"
+    data-soon9086-background-image-wrapper="true"></div>
+<div class="soon9086-13gvbxl-container" data-soon9086-name="home" id="bx3D63Q2X" name="home">
+    <div
+        style="height:100%;width:100%;object-fit:contain;text-align:center;overflow:hidden;background-color:transparent">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f3a8.svg"
+            style="height:100%;width:100%;object-fit:contain;text-align:center;overflow:hidden;background-color:transparent">
+    </div>
+</div>
+<div class="soon9086-1uapa1r" data-soon9086-name="About Me" id="e2ffCOGUN"
+    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+    data-soon9086-component-type="RichTextContainer">
+    <p style="--font-selector:R0Y7RE0gU2Fucy01MDA=;--soon9086-font-family:&quot;DM Sans&quot;, &quot;DM Sans Placeholder&quot;, sans-serif;--soon9086-font-weight:500;--soon9086-text-alignment:left;--soon9086-text-color:rgb(0, 168, 232)"
+        class="soon9086-text"><a class="soon9086-text soon9086-styles-preset-57rakp nav-link"
+            data-styles-preset="zMpsiMOLk" href="./about_me.html?type=about_me" data-text="About Me">About Me</a></p>
+</div>
+<div class="soon9086-210jza" data-soon9086-name="Resume" id="BTlK4b9g0"
+    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+    data-soon9086-component-type="RichTextContainer">
+    <p style="--font-selector:R0Y7RE0gU2Fucy01MDA=;--soon9086-font-family:&quot;DM Sans&quot;, &quot;DM Sans Placeholder&quot;, sans-serif;--soon9086-font-weight:500;--soon9086-text-alignment:left;--soon9086-text-color:rgb(0, 168, 232)"
+        class="soon9086-text"><a class="soon9086-text soon9086-styles-preset-57rakp nav-link"
+            data-styles-preset="zMpsiMOLk" href="./resume.html?type=resume" data-text="Resume">Resume</a></p>
+</div>
+<div class="soon9086-nwwc97" data-soon9086-name="Portfolio" id="EitmGa21K"
+    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+    data-soon9086-component-type="RichTextContainer">
+    <p style="--font-selector:R0Y7RE0gU2Fucy01MDA=;--soon9086-font-family:&quot;DM Sans&quot;, &quot;DM Sans Placeholder&quot;, sans-serif;--soon9086-font-weight:500;--soon9086-text-alignment:left;--soon9086-text-color:rgb(0, 168, 232)"
+        class="soon9086-text"><a class="soon9086-text soon9086-styles-preset-57rakp nav-link"
+            data-styles-preset="zMpsiMOLk" href="./portfolio.html?type=portfolio" data-text="Portfolio">Portfolio</a></p>
+</div>
+<div class="soon9086-1h6jqnh" data-soon9086-name="Contact" id="sxMhUFJTu"
+    style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
+    data-soon9086-component-type="RichTextContainer">
+    <p style="--font-selector:R0Y7RE0gU2Fucy01MDA=;--soon9086-font-family:&quot;DM Sans&quot;, &quot;DM Sans Placeholder&quot;, sans-serif;--soon9086-font-weight:500;--soon9086-text-alignment:left"
+        class="soon9086-text"><a class="soon9086-text soon9086-styles-preset-57rakp nav-link"
+            data-styles-preset="zMpsiMOLk" href="./contact.html?type=contact" data-text="Contact"
+            data-soon9086-page-link-current="true">Contact</a></p>
+</div>
+
+<script>
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Show the button when user scrolls down 20px from the top of the document
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to top when button is clicked
+    scrollToTopBtn.addEventListener("click", function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    });
+
+  // Function to get URL parameters
+  function getUrlParams() {
+      const params = {};
+      window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (match, key, value) {
+          params[key] = decodeURIComponent(value);
+      });
+      return params;
+  }
+
+  // Get the value of the 'type' parameter from the URL
+  const urlParams = getUrlParams();
+  const type = urlParams['type'];
+
+  // Now 'type' variable contains the value passed in the URL parameter 'type'
+  console.log('Type:', type);
+
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Loop through each navigation link
+  navLinks.forEach(link => {
+      // Get the href attribute of the link
+      const href = link.getAttribute('href');
+
+      // Check if the 'type' parameter matches the value specified in the href attribute
+      if (href.includes(type)) {
+          // Set 'data-soon9086-page-link-current' attribute to true for the matched link
+          link.setAttribute('data-soon9086-page-link-current', 'true');
+      } else {
+          // Remove 'data-soon9086-page-link-current' attribute from other links
+          link.removeAttribute('data-soon9086-page-link-current');
+      }
+  });
+</script>
